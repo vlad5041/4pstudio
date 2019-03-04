@@ -1,0 +1,229 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  line-height: 1;
+  color: #ffffff;
+  overflow: hidden ;
+}
+
+p{
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal !important;
+  font-size: 14px !important;
+}
+h1{
+  margin: 0 !important;
+}
+
+.blackout{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #141313;
+  opacity: 0.85;
+  z-index: -1;
+}
+
+.corner-logo{
+  opacity: 0.5;
+}
+.corner-logo:hover{
+  opacity: 1;
+}
+
+/*header*/
+.mdl-navigation__link{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 20px !important;
+  color: #B1B1B1 !important;
+  border-top: 3px solid #000000;
+}
+
+.mdl-navigation__link span:hover{
+  color: #ffffff !important;
+  border-top: 2px solid #FA5403;
+}
+
+.header-color {
+  background: url(./assets/images/background.png) no-repeat;
+}
+
+/*header*/
+
+.page-wrapper{
+  background: url(./assets/images/background.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.page-icon{
+  padding: 107px 0 0 68px;
+  float: left;
+}
+
+.page-title{
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 29px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  float: left;
+  padding: 100px 0 0 25px;
+}
+
+/*Главная*/
+.landing-grid {
+  text-align: left;
+}
+
+.banner-text{
+  float: left;
+  margin: -2px 30px 0 35px;
+  width: 400px;
+}
+.big-logo{
+  float: left;
+}
+
+.footer-main{
+  width: 215px;
+  height: 46px;
+  text-align: center;
+  position: absolute;
+  bottom: 17px;
+  right: 97px;
+}
+
+.footer-main a{
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;;
+}
+/*Главная*/
+
+.mdl-layout__drawer-button{
+  visibility: hidden;
+}
+
+/*О нас*/
+.aboutus-main-image img{
+  width: 100%;
+  height: 467px;
+}
+.aboutus-logo{
+  position: absolute;
+  bottom: 140px;
+  left: 130px;
+  width: 130px !important;
+  height: 234px;
+}
+.aboutus-content-wrap{
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  padding: 90px 145px;
+}
+.aboutsus-secondary-pictures{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 467px;
+  margin: 0 auto;
+}
+.aboutsus-secondary-pictures img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+  width: 198px;
+  height: 155px;
+}
+.aboutus-text{
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aboutus-text p{
+  font-size: 17px !important;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+.social-icons div{
+  margin-right: 30px;
+}
+.footer-aboutus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 80px 0 0 0;
+}
+.footer-aboutus div{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+}
+.footer-aboutus a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-aboutus-wrap{
+  width: 100%;
+}
+.ymaps-geolink{
+  color: #ffffff !important;
+}
+.ymaps-2-1-72-id-0::before{
+  content: none !important;
+}
+.ymaps-2-1-72-geolink-processed::after{
+  content: none !important;
+}
+.vk{
+  width: 41px; height: 41px;
+  background: url('./assets/images/icons/css_sprites_vk.png') -10px -10px;
+}
+.vk:hover{
+  width: 41px; height: 41px;
+  background: url('./assets/images/icons/css_sprites_vk.png') -71px -10px;
+}
+.insta{
+  width: 41px; height: 41px;
+  background: url('./assets/images/icons/css_sprites_instagram.png') -10px -10px;
+}
+.insta:hover{
+  width: 41px; height: 41px;
+  background: url('./assets/images/icons/css_sprites_instagram.png') -71px -10px;
+}
+/*О нас*/
