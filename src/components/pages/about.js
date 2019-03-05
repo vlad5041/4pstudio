@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import FooterNumberAddress from '../footer/footernumberaddress'
 
-const mainImage = require('../assets/images/gallery/1.jpg');
-const logo = require('../assets/images/logo.svg');
-const image1 = require('../assets/images/gallery/3.jpg');
-const image2 = require('../assets/images/gallery/4.jpg');
-const play = require('../assets/images/play.svg');
+const mainImage = require('../../assets/images/gallery/1.jpg');
+const logo = require('../../assets/images/logo.svg');
+const image1 = require('../../assets/images/gallery/3.jpg');
+const image2 = require('../../assets/images/gallery/4.jpg');
+const play = require('../../assets/images/play.svg');
 //const isMobile = /Mobile|webOS|BlackBerry|IEMobile|MeeGo|mini|Fennec|Windows Phone|Android|iP(ad|od|hone)/i.test(navigator.userAgent);
 
 class About extends Component {
@@ -49,13 +50,7 @@ class About extends Component {
             </div>
           </div>
 
-          <footer className="footer-about-wrap">
-            <div className="footer-about">
-              <div><a href="tel:+79181021999">8(918)1021999</a></div>
-              <div><a href="tel:+79284479797">8(928)4479797</a></div>
-              <div><span className="ymaps-geolink">Сочи, ул. Цветной бульвар, 27</span></div>
-            </div>
-          </footer>
+          <FooterNumberAddress />
         </div>
       </div>
     )

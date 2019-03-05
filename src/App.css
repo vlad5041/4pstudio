@@ -2,7 +2,7 @@
 {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 body {
@@ -25,7 +25,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 11%;
+  height: 18%;
 }
 .big-container{
   position: fixed;
@@ -34,6 +34,7 @@ footer {
   width: 100%;
   height: 100%;
   background: url(./assets/images/background.png) no-repeat;
+  background-position: bottom;
 }
 
 .blackout{
@@ -99,8 +100,8 @@ nav a span:hover{
 .page-title{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 10%;
+  justify-content: space-around;
+  width: 13%;
   margin: 50px 30px;
 }
 .page-icon{
@@ -122,17 +123,14 @@ nav a span:hover{
 }
 
 .footer-main{
-  width: 215px;
-  height: 46px;
-  text-align: center;
-  position: absolute;
-  bottom: 17px;
-  right: 97px;
+  width: 97%;
+  height: 10%;
+  text-align: right;
 }
 
 .footer-main a{
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   text-decoration: none;
   padding: 10px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -202,7 +200,7 @@ nav a span:hover{
 .footer-about{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100%;
   align-items: center;
 }
@@ -246,3 +244,72 @@ nav a span:hover{
   background: url('./assets/images/icons/css_sprites_instagram.png') -71px -10px;
 }
 /*О нас*/
+
+/*Прайс*/
+.price-content-wrap{
+  width: 100%;
+  height: 40%;
+}
+.services{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: baseline;
+  padding-top: 1%;
+}
+.services h2{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 26px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.service {
+  text-align: center;
+  width: 169px;
+}
+.services p{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 93px;
+}
+.cost{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.units{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.description{
+  height: 300px;
+}
+.description ul{
+  text-align: left;
+}
+/*Прайс*/

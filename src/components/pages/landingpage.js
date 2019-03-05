@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
+import FooterCallBack from '../footer/footercallback';
 
-const logo = require('../assets/images/logo.svg');
-const track = require('../assets/music/NWA-fuck-tha-police.mp3');
+const logo = require('../../assets/images/logo.svg');
+const track = require('../../assets/music/NWA-fuck-tha-police.mp3');
 const name = 'NWA-fuck-tha-police';
 
 class Landing extends Component {
   render() {
     return(
       <div style={{width: '100%', margin: 'auto'}}>
+        <style>{"\
+                .logo{\
+                  visibility: hidden;\
+                }\
+              "}</style>
         <div className="landing-grid page-wrapper">
           <div style={{position:'fixed', top:'290px', left:'271px'}}>
             <div className="big-logo">
@@ -28,9 +34,7 @@ class Landing extends Component {
               </audio>
             </div>
           </div>
-          <footer className="footer-main">
-            <a href="tel:+79181021999">Связаться с нами</a>
-          </footer>
+        <FooterCallBack />
         </div>
       </div>
 
