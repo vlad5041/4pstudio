@@ -6,24 +6,23 @@ const play = require('../assets/images/play.svg');
 class Price extends Component {
   render() {
     return(
-      <div>
+      <div style={{width: '80%', margin: 'auto'}}>
+
         <Grid className="page-wrapper">
           <div className="blackout"></div>
-          <Cell col={2}>
+          <Cell col={12}>
             <div className="page-icon">
               <img src={play} alt=""/>
             </div>
           </Cell>
-          <Cell col={2}>123
-          </Cell>
-          <Cell col={2}>123
-          </Cell>
-          <Cell col={2}>123
-          </Cell>
-          <Cell col={2}>123
-          </Cell>
-          <Cell col={2}>123
-          </Cell>
+        </Grid>
+        <Grid className="" style={{width: '80%', margin: '0 auto'}}>
+          <Cell col={2} style={{height: '80%'}}>1</Cell>
+          <Cell col={2} style={{height: '80%'}}>1</Cell>
+          <Cell col={2} style={{height: '80%'}}>1</Cell>
+          <Cell col={2} style={{height: '80%'}}>1</Cell>
+          <Cell col={2} style={{height: '80%'}}>1</Cell>
+          <Cell col={2} style={{height: '80%'}}>1</Cell>
         </Grid>
       </div>
     )

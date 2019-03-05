@@ -20,10 +20,25 @@ p{
 h1{
   margin: 0 !important;
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 11%;
+}
+.big-container{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/background.png) no-repeat;
+}
 
 .blackout{
   position: fixed;
-  top: 0;
+  top: 11%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -32,58 +47,64 @@ h1{
   z-index: -1;
 }
 
+/*header*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 11%;
+  align-items: center;
+}
+nav{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+nav a{
+  color: #B1B1B1;
+  text-decoration: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+}
+nav a span:hover{
+  border-top:  2px solid #FA5403;
+  color: #ffffff;
+}
+.logo{
+  width: 8%;
+  text-align: center;
+}
 .corner-logo{
   opacity: 0.5;
 }
 .corner-logo:hover{
   opacity: 1;
 }
-
-/*header*/
-.mdl-navigation__link{
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 20px !important;
-  color: #B1B1B1 !important;
-  border-top: 3px solid #000000;
-}
-
-.mdl-navigation__link span:hover{
-  color: #ffffff !important;
-  border-top: 2px solid #FA5403;
-}
-
-.header-color {
-  background: url(./assets/images/background.png) no-repeat;
-}
-
 /*header*/
 
-.page-wrapper{
-  background: url(./assets/images/background.png) no-repeat;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.page-icon{
-  padding: 107px 0 0 68px;
-  float: left;
-}
-
-.page-title{
+.page-h1{
   font-style: normal;
   font-weight: bold;
   line-height: normal;
   font-size: 29px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  float: left;
-  padding: 100px 0 0 25px;
+}
+
+.page-content{
+  width: 100%;
+  height: 100%;
+}
+.page-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 10%;
+  margin: 50px 30px;
+}
+.page-icon{
+  display: flex;
 }
 
 /*Главная*/
@@ -119,38 +140,35 @@ h1{
 }
 /*Главная*/
 
-.mdl-layout__drawer-button{
-  visibility: hidden;
-}
-
 /*О нас*/
-.aboutus-main-image img{
-  width: 100%;
+.about-main-image{
+  position: relative;
+}
+.about-main-image img{
+  width: 651px;
   height: 467px;
 }
-.aboutus-logo{
+.about-logo{
   position: absolute;
-  bottom: 140px;
-  left: 130px;
+  bottom: -35px;
+  left: -40px;
   width: 130px !important;
-  height: 234px;
+  height: 234px !important;
 }
-.aboutus-content-wrap{
+.about-content-wrap{
   display: flex;
   align-items: stretch;
-  width: 100%;
-  padding: 90px 145px;
+  width: 87%;
+  margin: auto;
 }
-.aboutsus-secondary-pictures{
+.about-secondary-images{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 100%;
-  height: 467px;
-  margin: 0 auto;
+  height: 100%;
 }
-.aboutsus-secondary-pictures img{
+.about-secondary-images img{
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -160,14 +178,14 @@ h1{
   width: 198px;
   height: 155px;
 }
-.aboutus-text{
+.about-text{
   width: 100%;
   text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.aboutus-text p{
+.about-text p{
   font-size: 17px !important;
   font-family: Roboto,sans-serif;
   font-style: normal;
@@ -181,24 +199,25 @@ h1{
 .social-icons div{
   margin-right: 30px;
 }
-.footer-aboutus{
+.footer-about{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 80px 0 0 0;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
 }
-.footer-aboutus div{
+.footer-about div{
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   font-size: 16px;
 }
-.footer-aboutus a{
+.footer-about a{
   text-decoration: none;
   color: #ffffff;
 }
-.footer-aboutus-wrap{
+.footer-about-wrap{
   width: 100%;
 }
 .ymaps-geolink{
