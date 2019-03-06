@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 const myIcon = require('../../assets/images/logo_min.svg');
+const mapIcon = require('../../assets/images/icons/logo_map.svg');
+const mapIconClose = require('../../assets/images/icons/close_map.svg');
+const mapBackground = require('../../assets/images/background.png');
 
 class CustomMap extends Component {
     constructor() {
@@ -14,10 +17,15 @@ class CustomMap extends Component {
                 this.setState({
                     template: ymaps.templateLayoutFactory.createClass(
                         'Студия звукозаписи<br />' +
-                        '<img src="' + myIcon + '" alt=""/> ЧП Studio <br />' +
+                        '<img src="' + myIcon + '" alt=""/> <br />ЧП Studio <br />' +
+                        '<style>.ymaps-2-1-72-balloon__content{ background: url("' + mapBackground +'") no-repeat right; background-size: cover;color: #ffffff}a{color: #ffffff}' +
+                        '.ymaps-2-1-72-balloon__close-button{background: url("' + mapIconClose + '") no-repeat}' +
+                        '.ymaps-2-1-72-balloon__layout{background: url("' + mapBackground +'") no-repeat right; background-size: cover;}</style>' +
                         'Контакты:<br />' +
                         '<a href="tel:+79181021999">89181021999</a> Денис<br />' +
-                        '<a href="tel:+79284479797">89284479797</a> Александр<br />'
+                        '<a href="tel:+79284479797">89284479797</a> Александр<br />' +
+                        'Адресс:<br/>' +
+                        'г. Сочи, ул. Цветной бульвар, 27'
                     ),
                 });
             }
@@ -26,24 +34,24 @@ class CustomMap extends Component {
 
     render() {
         return (
-            <div className="map">
+            <div className="map" style={{width: '100%', height: '100%'}}>
                 <YMaps>
                     <Map
-                        // Event handler was moved from onApiAvaliable on YMaps to onLoad on Map
+                        width={'100%'}
+                        height={'100%'}
                         onLoad={this.createTemplateLayoutFactory}
-                        state={{ center: [43.602778, 39.725621], zoom: 15, width: 1920, height: 1280 }}
-                        // We are also loading `templateLayoutFactory` additionally to Map
+                        state={{ center: [43.602363, 39.722416], zoom: 17}}
                         modules={['templateLayoutFactory']}
                     >
                         {this.state.template && (
                             <Placemark
-                                geometry={[43.602778, 39.725621]}
+                                geometry={[43.602742, 39.725586]}
                                 options={{
                                     balloonContentLayout: this.state.template,
                                     iconLayout: 'default#image',
-                                    iconImageHref: myIcon,
-                                    iconImageSize: [30, 42],
-                                    iconImageOffset: [-3, -42],
+                                    iconImageHref: mapIcon,
+                                    iconImageSize: [45, 56],
+                                    iconImageOffset: [-22.5, -56],
                                 }}
                                 modules={['geoObject.addon.balloon']}
                                 properties={{
