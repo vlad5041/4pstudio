@@ -15,7 +15,7 @@ class Landing extends Component {
                 }\
               "}</style>
         <div className="landing-grid page-wrapper">
-          <div style={{position:'fixed', top:'290px', left:'271px'}}>
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start', padding: '10% 15%'}}>
             <div className="big-logo">
               <img src={logo} alt="Логотип ЧП Studio"/>
             </div>
