@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
-const myIcon = require('../../assets/images/logo_min.svg');
-const mapIcon = require('../../assets/images/icons/logo_map.svg');
-const mapIconClose = require('../../assets/images/icons/close_map.svg');
-const mapBackground = require('../../assets/images/background.png');
+const mapIcon = require('../../../assets/images/icons/logo_map.svg');
+const mapIconClose = require('../../../assets/images/icons/close_map.svg');
+const mapBackground = require('../../../assets/images/background.png');
 
 class CustomMap extends Component {
     constructor() {
@@ -16,15 +15,14 @@ class CustomMap extends Component {
             if (ymaps && !this.state.template) {
                 this.setState({
                     template: ymaps.templateLayoutFactory.createClass(
-                        'Студия звукозаписи<br />' +
-                        '<img src="' + myIcon + '" alt=""/> <br />ЧП Studio <br />' +
-                        '<style>.ymaps-2-1-72-balloon__content{ background: url("' + mapBackground +'") no-repeat right; background-size: cover;color: #ffffff}a{color: #ffffff}' +
+                        'Студия звукозаписи ЧП Studio <br />' +
+                        '<style>.ymaps-2-1-72-balloon__content{ background: url("' + mapBackground +'") no-repeat right; background-size: cover;color: #ffffff}a{color: #FA5403}' +
                         '.ymaps-2-1-72-balloon__close-button{background: url("' + mapIconClose + '") no-repeat}' +
                         '.ymaps-2-1-72-balloon__layout{background: url("' + mapBackground +'") no-repeat right; background-size: cover;}</style>' +
                         'Контакты:<br />' +
                         '<a href="tel:+79181021999">89181021999</a> Денис<br />' +
                         '<a href="tel:+79284479797">89284479797</a> Александр<br />' +
-                        'Адресс:<br/>' +
+                        'Адрес:<br/>' +
                         'г. Сочи, ул. Цветной бульвар, 27'
                     ),
                 });

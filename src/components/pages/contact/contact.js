@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CustomMap from './contact_map';
 
-const play = require('../../assets/images/play.svg');
+const play = require('../../../assets/images/play.svg');
 
 class Contact extends Component {
   render() {
